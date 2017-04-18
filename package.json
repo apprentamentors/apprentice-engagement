@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon --exec \"babel-node\" server/bin/www",
+    "server": "nodemon --config .nodemonrc --exec \"babel-node\" server/bin/www",
     "client": "babel-node tasks/start-client.js"
   },
   "dependencies": {
