@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon --config .nodemonrc --exec server/bin/www",
-    "client": "tasks/start-client.js"
+    "server": "nodemon --config .nodemonrc server/bin/www",
+    "client": "tasks/start-client.js",
+    "start:heroku": "node server/bin/www"
   },
   "dependencies": {
     "@slack/client": "^3.9.0",
